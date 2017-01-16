@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenario>
+	<header>
+		<author>David Weiner</author>
+		<title>
+			<name>Healthy Dog Scenario</name>
+			<top>5</top>
+			<left>10</left>
+		</title>
+		<date_of_creation>2016-06-06</date_of_creation>
+		<description>This is the default scenario.</description>
+	</header>
+
+	<profile>
+		<avatar>
+			<filename>stock-dog.jpg</filename>
+			<height_pct>100</height_pct>
+			<width_pct>50</width_pct>
+		</avatar>
+		<summary>
+			<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet lectus id ante aliquet pharetra. Proin quis neque nisi. Integer sed odio congue, 
+bibendum purus id, imperdiet leo. Morbi tempus nibh ac malesuada egestas. Quisque facilisis, purus suscipit tincidunt bibendum, purus leo auctor mauris, ac 
+ullamcorper diam odio eget nulla. Mauris dignissim, lacus dapibus lobortis dignissim, odio velit volutpat nulla, ut convallis nisi urna eu nulla. Sed interdum 
+nisi in orci ullamcorper tincidunt. Aliquam erat volutpat. Sed id efficitur tortor, tincidunt condimentum urna.</description>
+			<breed>German Shepard</breed>
+			<gender>Male</gender>
+			<weight>35 kg</weight>
+			<symptoms>Not eating, no energy, excessive panting.</symptoms>
+			<image>fido.jpg</image>
+			<species>Canine</species>
+		</summary>
+		
+		<controls>
+			<color>#000000</color>
+			<control>
+				<title>Vocalizations</title>
+				<id>vocals-dog-control</id>
+				<top>125</top>
+				<left>300</left>
+			</control>
+			<control>
+				<title>Right Lung Sounds</title>
+				<id>right-lung-dog-control</id>
+				<top>180</top>
+				<left>80</left>
+			</control>
+			<control>
+				<title>Left Lung Sounds</title>
+				<id>left-lung-dog-control</id>
+				<top>180</top>
+				<left>320</left>
+			</control>
+			<control>
+				<title>Femoral Pulse</title>
+				<id>pulse-dog-control</id>
+				<top>275</top>
+				<left>300</left>
+			</control>
+			<control>
+				<title>Heart Sounds</title>
+				<id>heart-sound-dog-control</id>
+				<top>225</top>
+				<left>221</left>
+			</control>
+			<control>
+				<title>Chest Movement</title>
+				<id>chest-dog-control</id>
+				<top>210</top>
+				<left>325</left>
+			</control>
+			<control>
+				<title>ECG</title>
+				<id>button-ekg</id>
+				<top>350</top>
+				<left>0</left>
+			</control>
+			<control>
+				<title>SpO&lt;sub&gt;2&lt;&#47;sub&gt;</title>
+				<id>button-SpO2</id>
+				<top>350</top>
+				<left>55</left>
+			</control>
+			<control>
+				<title>ETCO&lt;sub&gt;2&lt;&#47;sub&gt;</title>
+				<id>button-CO2</id>
+				<top>350</top>
+				<left>110</left>
+			</control>
+		</controls>
+	</profile>
+	
+	<vocals>
+		<file>
+			<filename>M_Scream.wav</filename>
+			<title>Male Scream</title>
+		</file>
+		<file>
+			<filename>Moan.wav</filename>
+			<title>Male Moan</title>
+		</file>
+	</vocals>
+
+	<media>
+		<file>
+			<filename>MRI.jpg</filename>
+			<title>MRI</title>
+		</file>
+		<file>
+			<filename>xray.jpg</filename>
+			<title>Xray</title>
+		</file>
+		<file>
+			<filename>picture.jpg</filename>
+			<title>Picture of Patient</title>
+		</file>
+	</media>
+
+	<events>
+		<category>
+			<name>drugs</name>
+			<title>Injected Drugs</title>
+			<event>
+				<title>Morphine</title>
+				<id>opiate_morphine</id>
+			</event>
+			<event>
+				<title>Vicodin</title>
+				<id>hydrocodone</id>
+			</event>
+			<event>
+				<title>Aspirin</title>
+				<id>Aspirin</id>
+			</event>
+			<event>
+				<title>Tylenol</title>
+				<id>Acetominiphin</id>
+			</event>
+		</category>
+
+		<category>
+			<name>misc</name>
+			<title>Miscellaneous</title>
+			<event>
+				<title>Item 1</title>
+				<id>item-1</id>
+			</event>
+			<event>
+				<title>Item 2</title>
+				<id>item-2</id>
+			</event>
+			<event>
+				<title>Item 3</title>
+				<id>item-3</id>
+			</event>
+			<event>
+				<title>Item 4</title>
+				<id>item-4</id>
+			</event>
+		</category>
+		
+		<category>
+			<name>fun</name>
+			<title>Fun</title>
+			<event>
+				<title>Beer</title>
+				<id>beer</id>
+			</event>
+			<event>
+				<title>Wine</title>
+				<id>wine</id>
+			</event>
+			<event>
+				<title>Scotch</title>
+				<id>scotch</id>
+			</event>
+			<event>
+				<title>Whiskey</title>
+				<id>whiskey</id>
+			</event>
+		</category>
+	</events>
+
+	<scene>
+	</scene>
+	<scene>
+	</scene>
+</scenario>
