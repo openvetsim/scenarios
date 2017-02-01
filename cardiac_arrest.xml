@@ -156,6 +156,7 @@
 			<qrs_interval>85</qrs_interval>
 			<bps_sys>105</bps_sys>
 			<bps_dia>70</bps_dia>
+			<nibp_rate>78</nibp_rate>
 		</cardiac>
 		<respiration>
 			<left_sound_in>normal</left_sound_in>
@@ -217,6 +218,7 @@
 				<transfer_time>0</transfer_time>
 				<bps_sys>0</bps_sys>
 				<bps_dia>0</bps_dia>
+				<nibp_rate>0</nibp_rate>
 			</cardiac>
 			<respiration>
 				<spo2>0</spo2>
@@ -480,6 +482,7 @@
 				<rate>0</rate>
 				<bps_sys>0</bps_sys>
 				<bps_dia>0</bps_dia>
+				<nibp_rate>0</nibp_rate>
 				<transfer_rate>0</transfer_rate>
 			</cardiac>
 		</init>
@@ -497,6 +500,7 @@
 				<transfer_time>0</transfer_time>
 				<bps_sys>100</bps_sys>
 				<bps_dia>50</bps_dia>
+				<nibp_rate>160</nibp_rate>
 			</cardiac>
 			<respiration>
 				<spo2>94</spo2>

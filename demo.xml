@@ -156,6 +156,7 @@
 			<qrs_interval>85</qrs_interval>
 			<bps_sys>105</bps_sys>
 			<bps_dia>70</bps_dia>
+			<nibp_rate>78</nibp_rate>
 		</cardiac>
 		<respiration>
 			<left_sound_in>normal</left_sound_in>
