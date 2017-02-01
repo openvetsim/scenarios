@@ -103,6 +103,12 @@
 				<top>350</top>
 				<left>450</left>
 			</control>
+			<control>
+				<title>Palpate</title>
+				<id>button-palpate</id>
+				<top>20</top>
+				<left>390</left>
+			</control>
 		</controls>
 	</profile>
 
