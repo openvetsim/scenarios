@@ -102,16 +102,16 @@ nisi in orci ullamcorper tincidunt. Aliquam erat volutpat. Sed id efficitur tort
 
 	<media>
 		<file>
-			<filename>MRI.jpg</filename>
+			<url>3T-MRI-Horse-Brain.jpg</url>
 			<title>MRI</title>
 		</file>
 		<file>
-			<filename>xray.jpg</filename>
-			<title>Xray</title>
+			<url>BloodWork.JPG</url>
+			<title>Blood Work</title>
 		</file>
 		<file>
-			<filename>picture.jpg</filename>
-			<title>Picture of Patient</title>
+			<url>normalchest.jpg</url>
+			<title>Chest XRay</title>
 		</file>
 	</media>
 

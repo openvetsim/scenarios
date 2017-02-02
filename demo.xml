@@ -129,16 +129,16 @@
 	
 	<media>
 		<file>
-			<url>mri.jpg</url>
-			<title>MRI of healthy dog</title>
+			<url>3T-MRI-Horse-Brain.jpg</url>
+			<title>MRI</title>
 		</file>
 		<file>
-			<url>x-ray.pdf</url>
-			<title>X-Ray of healthy dog</title>
+			<url>BloodWork.JPG</url>
+			<title>Blood Work</title>
 		</file>
 		<file>
-			<url>blood_work.jpg</url>
-			<title>Blood work of healthy dog</title>
+			<url>normalchest.jpg</url>
+			<title>Chest XRay</title>
 		</file>
 	</media>
 
