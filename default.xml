@@ -98,6 +98,18 @@
 				<top>350</top>
 				<left>450</left>
 			</control>
+			<control>
+				<title>Palpate</title>
+				<id>button-palpate</id>
+				<top>20</top>
+				<left>390</left>
+			</control>
+			<control>
+				<title>Temp</title>
+				<id>button-Tperi</id>
+				<top>350</top>
+				<left>110</left>
+			</control>
 		</controls>
 	</profile>
 
@@ -144,6 +156,7 @@
 			<qrs_interval>85</qrs_interval>
 			<bps_sys>105</bps_sys>
 			<bps_dia>70</bps_dia>
+			<nibp_rate>70</nibp_rate>
 		</cardiac>
 		<respiration>
 			<left_sound_in>normal</left_sound_in>

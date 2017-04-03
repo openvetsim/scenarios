@@ -69,6 +69,12 @@ nisi in orci ullamcorper tincidunt. Aliquam erat volutpat. Sed id efficitur tort
 				<left>325</left>
 			</control>
 			<control>
+				<title>CPR</title>
+				<id>button-cpr</id>
+				<top>20</top>
+				<left>450</left>
+			</control>
+			<control>
 				<title>ECG</title>
 				<id>button-ekg</id>
 				<top>350</top>
@@ -83,6 +89,24 @@ nisi in orci ullamcorper tincidunt. Aliquam erat volutpat. Sed id efficitur tort
 			<control>
 				<title>ETCO&lt;sub&gt;2&lt;&#47;sub&gt;</title>
 				<id>button-CO2</id>
+				<top>350</top>
+				<left>395</left>
+			</control>
+			<control>
+				<title>Cuff</title>
+				<id>button-bpcuff</id>
+				<top>350</top>
+				<left>450</left>
+			</control>
+			<control>
+				<title>Palpate</title>
+				<id>button-palpate</id>
+				<top>20</top>
+				<left>390</left>
+			</control>
+			<control>
+				<title>Temp</title>
+				<id>button-Tperi</id>
 				<top>350</top>
 				<left>110</left>
 			</control>

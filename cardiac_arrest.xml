@@ -109,6 +109,12 @@
 				<top>20</top>
 				<left>390</left>
 			</control>
+			<control>
+				<title>Temp</title>
+				<id>button-Tperi</id>
+				<top>350</top>
+				<left>110</left>
+			</control>
 		</controls>
 	</profile>
 
