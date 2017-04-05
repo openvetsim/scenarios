@@ -18,8 +18,13 @@
 		</avatar>
 		<summary>
 			<description>
-				Max is a 6 year old male castrated Labrador who presented to your clinic for acute collapse and a recent history of waxing and 
-				waning inappetance and lethargy for the last 3 weeks. On presentation he is recumbent and unresponsive.
+				Max is a 6-year-old male castrated Labrador mix that presented to your clinic with a femur
+				fracture that you surgically repaired 2 days ago. He recovered well from surgery and has
+				been on 1.5x maintenance crystalloid fluids and constant rate infusions of fentanyl (3
+				mcg/kg/hr) for analgesia and midazolam (0.2 mg/kg/hr) because he has been anxious. You
+				were disconnecting him from his fluids to get him out of his cage for a physical exam and
+				accidentally flushed the line containing the fentanyl and midazolam. As soon as you finish
+				flushing the line, Max collapses and becomes unresponsive.				
 			</description>
 			<breed>Labrador Mix</breed>
 			<gender>Male</gender>
@@ -27,7 +32,7 @@
 			<symptoms>
 				Unresponsive.
 			</symptoms>
-			<image>arrest-dog.jpg</image>
+			<image>fido.jpg</image>
 			<species>Canine</species>
 		</summary>
 		<controls>
@@ -155,9 +160,9 @@
 			<pwave>none</pwave>
 			<pr_interval>140</pr_interval>
 			<qrs_interval>85</qrs_interval>
-			<bps_sys>0</bps_sys>
-			<bps_dia>0</bps_dia>
-			<nibp_rate>0</nibp_rate>
+			<bps_sys>105</bps_sys>
+			<bps_dia>70</bps_dia>
+			<nibp_rate>78</nibp_rate>
 		</cardiac>
 		<respiration>
 			<left_sound_in>normal</left_sound_in>
@@ -168,12 +173,12 @@
 			<right_sound_back>normal</right_sound_back>
 			<inhalation_duration>1350</inhalation_duration>
 			<exhalation_duration>1050</exhalation_duration>
-			<spo2>0</spo2>
-			<etco2>0</etco2>
-			<rate>0</rate>
+			<spo2>95</spo2>
+			<etco2>34</etco2>
+			<rate>20</rate>
 		</respiration>			
 		<general>
-			<temperature>994</temperature>
+			<temperature>1017</temperature>
 		</general>
 		<initial_scene>1</initial_scene>
 		<record>1</record>
@@ -186,6 +191,11 @@
 			<event>
 				<title>Inject Epinephrene</title>
 				<id>inject_epinephrine</id>
+				<priority>1</priority>
+			</event>
+			<event>
+				<title>Inject Vasopressin</title>
+				<id>inject_vasopressin</id>
 				<priority>1</priority>
 			</event>
 		</category>
@@ -223,7 +233,7 @@
 				<transfer_time>0</transfer_time>
 			</respiration>
 			<general>
-				<temperature>994</temperature>
+				<temperature>1002</temperature>
 				<transfer_time>0</transfer_time>
 			</general>
 		</init>
@@ -240,7 +250,7 @@
 				<test>GTE</test>
 				<scene_id>2</scene_id>
 				<cpr>
-					<duration>30</duration>
+					<duration>10</duration>
 				</cpr>
 			</trigger>
 			
@@ -254,7 +264,7 @@
 	
 	<scene>
 		<!-- Waiting for Epi / Vaso -->
-		<title>Wait for Epi</title>
+		<title>Wait for Epi or Vaso injection</title>
 		<id>2</id>
 		<init></init>
 		
@@ -271,7 +281,66 @@
 				<scene_id>100</scene_id>
 			</trigger>
 			
-			<!-- wait for epinephrine -->
+			<!-- wait for vasopressin or epinephrine -->
+			<trigger>
+				<event_id>inject_epinephrine</event_id>
+				<scene_id>3</scene_id>
+			</trigger>
+			<trigger>
+				<event_id>inject_vasopressin</event_id>
+				<scene_id>4</scene_id>
+			</trigger>
+		</triggers>
+	</scene>
+	
+	<scene>
+		<!-- Waiting for Vaso -->
+		<title>Wait for Vaso injection</title>
+		<id>3</id>
+		<init></init>
+		
+		<!-- triggers to leave the scene -->
+		<!-- timeout to Terminal Asystole if no compressions -->
+		<timeout>
+			<timeout_value>30</timeout_value>
+			<scene_id>100</scene_id>
+		</timeout>
+		<triggers>
+			<!-- jump to terminal asystole if defib attempted -->
+			<trigger>
+				<event_id>aed</event_id>
+				<scene_id>100</scene_id>
+			</trigger>
+			
+			<!-- wait for vasopressin -->
+			<trigger>
+				<event_id>inject_vasopressin</event_id>
+				<scene_id>5</scene_id>
+			</trigger>
+		</triggers>
+	</scene>
+	
+	<scene>
+		<!-- Waiting for Epi -->
+		<title>Wait for Epinephrine injection</title>
+		<id>4</id>
+		<init>
+		</init>
+		
+		<!-- triggers to leave the scene -->
+		<!-- timeout to Terminal Asystole if no compressions -->
+		<timeout>
+			<timeout_value>30</timeout_value>
+			<scene_id>100</scene_id>
+		</timeout>
+		<triggers>
+			<!-- jump to terminal asystole if defib attempted -->
+			<trigger>
+				<event_id>aed</event_id>
+				<scene_id>100</scene_id>
+			</trigger>
+			
+			<!-- wait for vasopressin -->
 			<trigger>
 				<event_id>inject_epinephrine</event_id>
 				<scene_id>5</scene_id>
@@ -289,20 +358,125 @@
 		<!-- triggers to leave the scene -->
 		<!-- timeout to Terminal Asystole if no compressions -->
 		<timeout>
-			<timeout_value>60</timeout_value>
+			<timeout_value>30</timeout_value>
 			<scene_id>100</scene_id>
 		</timeout>
 		<triggers>
 			<trigger>
 				<test>GTE</test>
-				<scene_id>10</scene_id>
+				<scene_id>6</scene_id>
 				<cpr>
-					<duration>30</duration>
+					<duration>10</duration>
 				</cpr>
 			</trigger>
 		</triggers>
 	</scene>
-
+	
+	<scene>
+		<!-- Waiting for Epi / Vaso -->
+		<title>Wait for Epi or Vaso injection</title>
+		<id>6</id>
+		<init>
+		</init>
+		
+		<!-- triggers to leave the scene -->
+		<!-- timeout to Terminal Asystole if no compressions -->
+		<timeout>
+			<timeout_value>30</timeout_value>
+			<scene_id>100</scene_id>
+		</timeout>
+		<triggers>
+			<!-- jump to terminal asystole if defib attempted -->
+			<trigger>
+				<event_id>aed</event_id>
+				<scene_id>100</scene_id>
+			</trigger>
+			
+			<!-- wait for vasopressin or epinephrine -->
+			<trigger>
+				<event_id>inject_epinephrine</event_id>
+				<scene_id>7</scene_id>
+			</trigger>
+			<trigger>
+				<event_id>inject_vasopressin</event_id>
+				<scene_id>8</scene_id>
+			</trigger>
+		</triggers>
+	</scene>
+	
+	<scene>
+		<!-- Waiting for Vaso -->
+		<title>Wait for Vaso injection</title>
+		<id>7</id>
+		<init>
+		</init>
+		
+		<!-- triggers to leave the scene -->
+		<!-- timeout to Terminal Asystole if no compressions -->
+		<timeout>
+			<timeout_value>30</timeout_value>
+			<scene_id>100</scene_id>
+		</timeout>
+		<triggers>
+			<!-- jump to terminal asystole if defib attempted -->
+			<trigger>
+				<event_id>aed</event_id>
+				<scene_id>100</scene_id>
+			</trigger>
+			
+			<!-- wait for vasopressin -->
+			<trigger>
+				<event_id>inject_vasopressin</event_id>
+				<scene_id>9</scene_id>
+			</trigger>
+		</triggers>
+	</scene>
+	
+	<scene>
+		<!-- Waiting for Epi -->
+		<title>Wait for Epinephrine injection</title>
+		<id>8</id>
+		<init>
+		</init>
+		
+		<!-- triggers to leave the scene -->
+		<!-- timeout to Terminal Asystole if no compressions -->
+		<timeout>
+			<timeout_value>30</timeout_value>
+			<scene_id>100</scene_id>
+		</timeout>
+		<triggers>
+			<!-- jump to terminal asystole if defib attempted -->
+			<trigger>
+				<event_id>aed</event_id>
+				<scene_id>100</scene_id>
+			</trigger>
+			
+			<!-- wait for vasopressin -->
+			<trigger>
+				<event_id>inject_epinephrine</event_id>
+				<scene_id>9</scene_id>
+			</trigger>
+		</triggers>
+	</scene>
+	
+	<scene>
+		<!-- Waiting for Sinus -->
+		<title>Wait for Sinus</title>
+		<id>9</id>
+		<init>
+			<cardiac>
+				<arrest>1</arrest>
+			</cardiac>
+		</init>
+		
+		<!-- triggers to leave the scene -->
+		<!-- timeout to Terminal Asystole if no compressions -->
+		<timeout>
+			<timeout_value>15</timeout_value>
+			<scene_id>10</scene_id>
+		</timeout>
+	</scene>
 	
 	<!-- terminal asystole -->
 	<scene>
@@ -327,19 +501,23 @@
 		<init>
 			<cardiac>
 				<rhythm>sinus</rhythm>
-				<rate>130</rate>
+				<rate>160</rate>
 				<arrest>0</arrest>
 				<transfer_time>0</transfer_time>
-				<bps_sys>90</bps_sys>
-				<bps_dia>60</bps_dia>
-				<nibp_rate>130</nibp_rate>
-				<heart_sound>normal</heart_sound>
+				<bps_sys>100</bps_sys>
+				<bps_dia>50</bps_dia>
+				<nibp_rate>160</nibp_rate>
 			</cardiac>
 			<respiration>
-				<spo2>93</spo2>
-				<rate>32</rate>
+				<spo2>94</spo2>
+				<rate>20</rate>
+				<etco2>55</etco2>
 				<transfer_time>0</transfer_time>
 			</respiration>
+			<general>
+				<temperature>963</temperature>
+				<transfer_time>0</transfer_time>
+			</general>
 		</init>
 	</scene>
 </scenario>
