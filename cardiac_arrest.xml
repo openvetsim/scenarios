@@ -51,10 +51,28 @@
 				<left>320</left>
 			</control>
 			<control>
-				<title>Femoral Pulse</title>
-				<id>pulse-dog-control</id>
+				<title>Left Femoral Pulse</title>
+				<id>left-femoral-pulse-dog-control</id>
 				<top>275</top>
-				<left>300</left>
+				<left>320</left>
+			</control>
+			<control>
+				<title>Right Femoral Pulse</title>
+				<id>right-femoral-pulse-dog-control</id>
+				<top>275</top>
+				<left>75</left>
+			</control>
+			<control>
+				<title>Left Dorsal Pulse</title>
+				<id>left-dorsal-pulse-dog-control</id>
+				<top>310</top>
+				<left>325</left>
+			</control>
+			<control>
+				<title>Right Dorsal Pulse</title>
+				<id>right-dorsal-pulse-dog-control</id>
+				<top>310</top>
+				<left>85</left>
 			</control>
 			<control>
 				<title>Heart Sounds</title>
