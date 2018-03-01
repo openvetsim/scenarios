@@ -22,13 +22,14 @@
 				and patient's girlfriend 'Fifi' was seen with a younger Golden Retriever.
 			</description>
 			<breed>German Shepard</breed>
-			<gender>Male</gender>
+			<sex>Male</sex>
 			<weight>25 kg</weight>
-			<symptoms>
+			<complaint>
 				Not eating, no energy, excessive panting.
-			</symptoms>
+			</complaint>
 			<image>healthy-dog.jpg</image>
 			<species>Canine</species>
+			<age>4 years old</age>
 		</summary>
 		<controls>
 			<color>#000000</color>
@@ -148,15 +149,15 @@
 	
 	<media>
 		<file>
-			<url>3T-MRI-Horse-Brain.jpg</url>
+			<filename>3T-MRI-Horse-Brain.jpg</filename>
 			<title>MRI</title>
 		</file>
 		<file>
-			<url>BloodWork.JPG</url>
+			<filename>BloodWork.JPG</filename>
 			<title>Blood Work</title>
 		</file>
 		<file>
-			<url>normalchest.jpg</url>
+			<filename>normalchest.jpg</filename>
 			<title>Chest XRay</title>
 		</file>
 	</media>
@@ -177,14 +178,8 @@
 			<nibp_rate>70</nibp_rate>
 		</cardiac>
 		<respiration>
-			<left_sound_in>normal</left_sound_in>
-			<left_sound_out>normal</left_sound_out>
-			<left_sound_back>normal</left_sound_back>
-			<right_sound_in>normal</right_sound_in>
-			<right_sound_out>normal</right_sound_out>
-			<right_sound_back>normal</right_sound_back>
-			<inhalation_duration>1350</inhalation_duration>
-			<exhalation_duration>1050</exhalation_duration>
+			<left_lung_sound>normal</left_lung_sound>
+			<right_lung_sound>normal</right_lung_sound>
 			<spo2>95</spo2>
 			<etco2>34</etco2>
 			<rate>20</rate>

@@ -142,15 +142,15 @@
 
 	<media>
 		<file>
-			<url>3T-MRI-Horse-Brain.jpg</url>
+			<filename>3T-MRI-Horse-Brain.jpg</filename>
 			<title>MRI</title>
 		</file>
 		<file>
-			<url>BloodWork.JPG</url>
+			<filename>BloodWork.JPG</filename>
 			<title>Blood Work</title>
 		</file>
 		<file>
-			<url>normalchest.jpg</url>
+			<filename>normalchest.jpg</filename>
 			<title>Chest XRay</title>
 		</file>
 	</media>
