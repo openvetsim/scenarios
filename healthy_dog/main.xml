@@ -163,6 +163,7 @@
 				<title>Inject Epinephrene</title>
 				<id>inject_epinephrine</id>
 				<priority>1</priority>
+				<hotkey>E</hotkey>
 			</event>
 		</category>
 		<category>
@@ -173,6 +174,7 @@
 				<title>Defib</title>
 				<id>aed</id>
 				<priority>1</priority>
+				<hotkey>d</hotkey>
 			</event>
 		</category>
 	</events>
