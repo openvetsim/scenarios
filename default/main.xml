@@ -15,6 +15,8 @@
 			<filename>stock-dog.jpg</filename>
 			<height_pct>100</height_pct>
 			<width_pct>50</width_pct>
+			<height_pct_telesim>70</height_pct_telesim>
+			<width_pct_telesim>50</width_pct_telesim>
 		</avatar>
 		<summary>
 			<description>
@@ -38,30 +40,56 @@
 				<id>vocals-dog-control</id>
 				<top>125</top>
 				<left>300</left>
+				<icon_telesim>barking-dog.png</icon_telesim>
+				<attr_telesim>No attribution</attr_telesim>
+				<top_telesim>115</top_telesim>
+				<left_telesim>175</left_telesim>
+				<width_telesim>65</width_telesim>
 			</control>
 			<control>
 				<title>Right Lung Sounds</title>
 				<id>right-lung-dog-control</id>
 				<top>180</top>
 				<left>80</left>
+				<icon_telesim>breathing.png</icon_telesim>
+				<attr_telesim>Breathing created by Becca from Noun Project</attr_telesim>
+				<top_telesim>180</top_telesim>
+				<left_telesim>100</left_telesim>
+				<width_telesim>45</width_telesim>
 			</control>
 			<control>
 				<title>Left Lung Sounds</title>
 				<id>left-lung-dog-control</id>
 				<top>180</top>
 				<left>320</left>
+				<icon_telesim>breathing.png</icon_telesim>
+				<attr_telesim>Breathing created by Becca from Noun Project</attr_telesim>
+				<top_telesim>180</top_telesim>
+				<left_telesim>180</left_telesim>
+				<width_telesim>45</width_telesim>
 			</control>
 			<control>
 				<title>Left Femoral Pulse</title>
 				<id>left-femoral-pulse-dog-control</id>
 				<top>275</top>
 				<left>320</left>
+				<icon_telesim>pulse.png</icon_telesim>
+				<attr_telesim>Pulse created by iconsphere from Noun Project</attr_telesim>
+				<top_telesim>235</top_telesim>
+				<left_telesim>165</left_telesim>				
+				<width_telesim>45</width_telesim>
+
 			</control>
 			<control>
 				<title>Right Femoral Pulse</title>
 				<id>right-femoral-pulse-dog-control</id>
 				<top>275</top>
 				<left>75</left>
+				<icon_telesim>pulse.png</icon_telesim>
+				<attr_telesim>Pulse created by iconsphere from Noun Project</attr_telesim>
+				<top_telesim>235</top_telesim>
+				<left_telesim>110</left_telesim>				
+				<width_telesim>45</width_telesim>
 			</control>
 <!--  		<control>
 				<title>Left Dorsal Pulse</title>
@@ -80,18 +108,30 @@
 				<id>heart-sound-dog-control</id>
 				<top>225</top>
 				<left>221</left>
+				<icon_telesim>heartSound.png</icon_telesim>
+				<attr_telesim>Headphone created by Tinashe Mugayi from Noun Project</attr_telesim>
+				<top_telesim>200</top_telesim>
+				<left_telesim>140</left_telesim>				
+				<width_telesim>45</width_telesim>
 			</control>
 			<control>
 				<title>Chest Movement</title>
 				<id>chest-dog-control</id>
 				<top>210</top>
 				<left>325</left>
+				<icon_telesim>chestMove.png</icon_telesim>
+				<attr_telesim>Breathing Lungs created by Becca from Noun Project</attr_telesim>
+				<top_telesim>153</top_telesim>
+				<left_telesim>130</left_telesim>				
+				<width_telesim>65</width_telesim>
 			</control>
 			<control>
 				<title>CPR</title>
 				<id>button-cpr</id>
 				<top>20</top>
 				<left>450</left>
+				<top_telesim>100</top_telesim>
+				<left_telesim>0</left_telesim>
 			</control>
 			<control>
 				<title>ECG</title>
@@ -110,18 +150,24 @@
 				<id>button-CO2</id>
 				<top>350</top>
 				<left>395</left>
+				<top_telesim>350</top_telesim>
+				<left_telesim>165</left_telesim>
 			</control>
 			<control>
 				<title>Cuff</title>
 				<id>button-bpcuff</id>
 				<top>350</top>
 				<left>450</left>
+				<top_telesim>350</top_telesim>
+				<left_telesim>220</left_telesim>
 			</control>
 			<control>
 				<title>Palpate</title>
 				<id>button-palpate</id>
 				<top>20</top>
 				<left>390</left>
+				<top_telesim>200</top_telesim>
+				<left_telesim>0</left_telesim>
 			</control>
 			<control>
 				<title>Temp</title>
@@ -161,6 +207,7 @@
 			<title>Chest XRay</title>
 		</file>
 	</media>
+
 
 	<soundtags>
 	  <tag>
@@ -214,7 +261,6 @@
 		<yPosition>9</yPosition>
 	  </tag>
 	</soundtags>
-
 	<init>
 		<cardiac>
 			<rhythm>sinus</rhythm>
