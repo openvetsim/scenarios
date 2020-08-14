@@ -229,11 +229,11 @@
 	  <tag>
 		<description>Point 2</description>
 		<tagId>2</tagId>
-		<side>2</side>
+		<side>1</side>
 		<heartStrength>2</heartStrength>
 		<lungStrength>10</lungStrength>
 		<vocalStrengh>0</vocalStrengh>
-		<xPosition>2</xPosition>
+		<xPosition>1</xPosition>
 		<yPosition>2</yPosition>
 	  </tag>
 	  <tag>
@@ -243,28 +243,28 @@
 		<heartStrength>2</heartStrength>
 		<lungStrength>10</lungStrength>
 		<vocalStrengh>0</vocalStrengh>
-		<xPosition>3</xPosition>
+		<xPosition>1</xPosition>
 		<yPosition>3</yPosition>
 	  </tag>
 	  <tag>
 		<description>Point 4</description>
 		<tagId>4</tagId>
-		<side>3</side>
-		<heartStrength>0</heartStrength>
-		<lungStrength>0</lungStrength>
-		<vocalStrengh>10</vocalStrengh>
-		<xPosition>0</xPosition>
-		<yPosition>0</yPosition>
+		<side>1</side>
+		<heartStrength>3</heartStrength>
+		<lungStrength>4</lungStrength>
+		<vocalStrengh>0</vocalStrengh>
+		<xPosition>1</xPosition>
+		<yPosition>4</yPosition>
 	  </tag>
 	  <tag>
-		<description>Test Tag</description>
+		<description>Point 5</description>
 		<tagId>4</tagId>
-		<side>3</side>
+		<side>1</side>
 		<heartStrength>1</heartStrength>
 		<lungStrength>5</lungStrength>
 		<vocalStrengh>10</vocalStrengh>
-		<xPosition>9</xPosition>
-		<yPosition>9</yPosition>
+		<xPosition>1</xPosition>
+		<yPosition>5</yPosition>
 	  </tag>
 	</soundtags>
 	<init>
