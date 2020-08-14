@@ -16,7 +16,7 @@
 			<height_pct>100</height_pct>
 			<width_pct>50</width_pct>
 			<height_pct_telesim>70</height_pct_telesim>
-			<width_pct_telesim>51</width_pct_telesim>
+			<width_pct_telesim>75</width_pct_telesim>
 		</avatar>
 		<summary>
 			<description>
@@ -43,7 +43,7 @@
 				<icon_telesim>barking-dog.png</icon_telesim>
 				<attr_telesim>No attribution</attr_telesim>
 				<top_telesim>115</top_telesim>
-				<left_telesim>175</left_telesim>
+				<left_telesim>145</left_telesim>
 				<width_telesim>65</width_telesim>
 			</control>
 			<control>
@@ -54,7 +54,7 @@
 				<icon_telesim>breathing.png</icon_telesim>
 				<attr_telesim>Breathing created by Becca from Noun Project</attr_telesim>
 				<top_telesim>180</top_telesim>
-				<left_telesim>100</left_telesim>
+				<left_telesim>80</left_telesim>
 				<width_telesim>45</width_telesim>
 			</control>
 			<control>
@@ -65,7 +65,7 @@
 				<icon_telesim>breathing.png</icon_telesim>
 				<attr_telesim>Breathing created by Becca from Noun Project</attr_telesim>
 				<top_telesim>180</top_telesim>
-				<left_telesim>180</left_telesim>
+				<left_telesim>160</left_telesim>
 				<width_telesim>45</width_telesim>
 			</control>
 			<control>
@@ -76,7 +76,7 @@
 				<icon_telesim>pulse.png</icon_telesim>
 				<attr_telesim>Pulse created by iconsphere from Noun Project</attr_telesim>
 				<top_telesim>235</top_telesim>
-				<left_telesim>165</left_telesim>				
+				<left_telesim>145</left_telesim>				
 				<width_telesim>45</width_telesim>
 
 			</control>
@@ -88,7 +88,7 @@
 				<icon_telesim>pulse.png</icon_telesim>
 				<attr_telesim>Pulse created by iconsphere from Noun Project</attr_telesim>
 				<top_telesim>235</top_telesim>
-				<left_telesim>110</left_telesim>				
+				<left_telesim>90</left_telesim>				
 				<width_telesim>45</width_telesim>
 			</control>
 <!--  		<control>
@@ -111,7 +111,7 @@
 				<icon_telesim>heartSound.png</icon_telesim>
 				<attr_telesim>Headphone created by Tinashe Mugayi from Noun Project</attr_telesim>
 				<top_telesim>200</top_telesim>
-				<left_telesim>140</left_telesim>				
+				<left_telesim>120</left_telesim>				
 				<width_telesim>45</width_telesim>
 			</control>
 			<control>
@@ -122,7 +122,7 @@
 				<icon_telesim>chestMove.png</icon_telesim>
 				<attr_telesim>Breathing Lungs created by Becca from Noun Project</attr_telesim>
 				<top_telesim>153</top_telesim>
-				<left_telesim>130</left_telesim>				
+				<left_telesim>110</left_telesim>				
 				<width_telesim>65</width_telesim>
 			</control>
 			<control>
@@ -131,19 +131,23 @@
 				<top>20</top>
 				<left>450</left>
 				<top_telesim>100</top_telesim>
-				<left_telesim>0</left_telesim>
+				<left_telesim>5</left_telesim>
 			</control>
 			<control>
 				<title>ECG</title>
 				<id>button-ekg</id>
 				<top>350</top>
 				<left>0</left>
+				<top_telesim>350</top_telesim>
+				<left_telesim>5</left_telesim>
 			</control>
 			<control>
 				<title>SpO&lt;sub&gt;2&lt;&#47;sub&gt;</title>
 				<id>button-SpO2</id>
 				<top>350</top>
 				<left>55</left>
+				<top_telesim>350</top_telesim>
+				<left_telesim>55</left_telesim>
 			</control>
 			<control>
 				<title>ETCO&lt;sub&gt;2&lt;&#47;sub&gt;</title>
@@ -151,7 +155,7 @@
 				<top>350</top>
 				<left>395</left>
 				<top_telesim>350</top_telesim>
-				<left_telesim>165</left_telesim>
+				<left_telesim>155</left_telesim>
 			</control>
 			<control>
 				<title>Cuff</title>
@@ -159,7 +163,7 @@
 				<top>350</top>
 				<left>450</left>
 				<top_telesim>350</top_telesim>
-				<left_telesim>220</left_telesim>
+				<left_telesim>205</left_telesim>
 			</control>
 			<control>
 				<title>Palpate</title>
@@ -167,13 +171,15 @@
 				<top>20</top>
 				<left>390</left>
 				<top_telesim>200</top_telesim>
-				<left_telesim>0</left_telesim>
+				<left_telesim>5</left_telesim>
 			</control>
 			<control>
 				<title>Temp</title>
 				<id>button-Tperi</id>
 				<top>350</top>
 				<left>110</left>
+				<top_telesim>350</top_telesim>
+				<left_telesim>105</left_telesim>
 			</control>
 		</controls>
 	</profile>
