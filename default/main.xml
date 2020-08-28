@@ -7,7 +7,7 @@
 			<top>5</top>
 			<left>10</left>
 		</title>
-		<date_of_creation>2018-02-07</date_of_creation>
+		<date_of_creation>2020-02-07</date_of_creation>
 		<description>Default</description>
 	</header>
 	<profile>
@@ -267,6 +267,84 @@
 		<yPosition>5</yPosition>
 	  </tag>
 	</soundtags>
+	
+	<telesim>
+		<images>
+			<image>
+				<window>0</window>
+				<name>Auscultation</name>
+				<filename>top-dog.png</filename>
+				<scale_width_pct>115</scale_width_pct>
+				<offset_left_px>-26</offset_left_px>
+				<offset_top_px>22</offset_top_px>
+				<auscultation_points>
+					<auscultation_point>
+						<name>1</name>
+						<side>1</side>
+						<row>1</row>
+						<col>1</col>
+						<offset_top_px>85</offset_top_px>
+						<offset_left_px>100</offset_left_px>
+					</auscultation_point>
+					<auscultation_point>
+						<name>2</name>
+						<side>1</side>
+						<row>2</row>
+						<col>1</col>
+						<offset_top_px>85</offset_top_px>
+						<offset_left_px>125</offset_left_px>
+					</auscultation_point>
+					<auscultation_point>
+						<name>3</name>
+						<side>1</side>
+						<row>3</row>
+						<col>1</col>
+						<offset_top_px>110</offset_top_px>
+						<offset_left_px>100</offset_left_px>
+					</auscultation_point>
+					<auscultation_point>
+						<name>4</name>
+						<side>1</side>
+						<row>4</row>
+						<col>1</col>
+						<offset_top_px>110</offset_top_px>
+						<offset_left_px>125</offset_left_px>
+					</auscultation_point>			
+				</auscultation_points>		
+			</image>
+			<image>
+				<name>Pic 1</name>
+				<filename>pic2.jpg</filename>
+				<window>0</window>
+			</image>
+			<image>
+				<name>Pic 1</name>
+				<filename>pic2.jpg</filename>
+				<window>1</window>
+			</image>
+			<image>
+				<name>Pic 2</name>
+				<filename>pic1.jpg</filename>
+				<window>1</window>
+			</image>
+			<image>
+				<name>Pic 2</name>
+				<filename>pic1.jpg</filename>
+				<window>0</window>
+			</image>
+			<image>
+				<name>Movie</name>
+				<filename>movie.mp4</filename>
+				<window>1</window>
+			</image>
+			<image>
+				<name>Movie</name>
+				<filename>movie.mp4</filename>
+				<window>0</window>
+			</image>
+		</images>
+	</telesim>
+	
 	<init>
 		<cardiac>
 			<rhythm>sinus</rhythm>
