@@ -423,7 +423,7 @@
 			</cardiac>
 			<respiration>
 				<spo2>98</spo2>
-				<rate>50</rate>
+				<rate>20</rate>
 				<transfer_time>0</transfer_time>
 			</respiration>
 			<general>
