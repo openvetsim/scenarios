@@ -281,32 +281,32 @@
 					<auscultation_point>
 						<name>1</name>
 						<side>1</side>
-						<row>1</row>
-						<col>1</col>
+						<xPosition>1</xPosition>
+						<yPosition>1</yPosition>
 						<offset_top_px>85</offset_top_px>
 						<offset_left_px>100</offset_left_px>
 					</auscultation_point>
 					<auscultation_point>
 						<name>2</name>
 						<side>1</side>
-						<row>2</row>
-						<col>1</col>
+						<xPosition>1</xPosition>
+						<yPosition>2</yPosition>
 						<offset_top_px>85</offset_top_px>
 						<offset_left_px>125</offset_left_px>
 					</auscultation_point>
 					<auscultation_point>
 						<name>3</name>
 						<side>1</side>
-						<row>3</row>
-						<col>1</col>
+						<xPosition>1</xPosition>
+						<yPosition>3</yPosition>
 						<offset_top_px>110</offset_top_px>
 						<offset_left_px>100</offset_left_px>
 					</auscultation_point>
 					<auscultation_point>
 						<name>4</name>
 						<side>1</side>
-						<row>4</row>
-						<col>1</col>
+						<xPosition>1</xPosition>
+						<yPosition>5</yPosition>
 						<offset_top_px>110</offset_top_px>
 						<offset_left_px>125</offset_left_px>
 					</auscultation_point>			
@@ -430,6 +430,11 @@
 				<temperature>1007</temperature>
 				<transfer_time>0</transfer_time>
 			</general>
+			<telesim>
+				<window>0</window>
+				<name>blank</name>
+				<options>Loop Play</options>
+			</telesim>
 		</init>
 	</scene>
 </scenario>
